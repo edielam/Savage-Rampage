@@ -1152,11 +1152,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &405248361 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3440675527025857703, guid: ef310dde83d814954a52a276e5003717, type: 3}
-  m_PrefabInstance: {fileID: 3440675527375145181}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &407009298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,10 +6049,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 726850684, guid: ef310dde83d814954a52a276e5003717, type: 3}
-      propertyPath: mybody
-      value: 
-      objectReference: {fileID: 405248361}
     - target: {fileID: 3440675527025857700, guid: ef310dde83d814954a52a276e5003717, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6100,10 +6091,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3440675527025857700, guid: ef310dde83d814954a52a276e5003717, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3440675527025857701, guid: ef310dde83d814954a52a276e5003717, type: 3}
-      propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3440675527025857707, guid: ef310dde83d814954a52a276e5003717, type: 3}

@@ -35,6 +35,10 @@ public class Player : MonoBehaviour
         AnimatePlayer();
     }
 
+    private void FixedUpdate()
+    {
+        PlayerJump();
+    }
     void PlayerMove()
     {
         movementX = Input.GetAxisRaw("Horizontal");
@@ -54,6 +58,13 @@ public class Player : MonoBehaviour
         else
         {
             anim.SetBool(WALK_ANIMATION, false);
+        }
+    }
+    void PlayerJump()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            mybody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
 }
