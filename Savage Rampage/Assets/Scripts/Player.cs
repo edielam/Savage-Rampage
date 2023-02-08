@@ -7,12 +7,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float moveForce = 10f;
     [SerializeField]
-    private float jumpForce = 11f;
+    private float jumpForce = 20f;
 
     private float movementX;
     private Rigidbody2D mybody;
     private Animator anim;
     private string WALK_ANIMATION = "Walk";
+    private string JUMP_ANIMATION = "Jump";
     private SpriteRenderer sr;
 
     private void Awake()
@@ -62,9 +63,13 @@ public class Player : MonoBehaviour
     }
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Jump"))
         {
             mybody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            anim.SetBool(JUMP_ANIMATION, true); 
+        } else
+        {
+            anim.SetBool(JUMP_ANIMATION, false);
         }
     }
 }
