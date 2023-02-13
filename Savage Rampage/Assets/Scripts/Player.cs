@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float moveForce = 10f;
     [SerializeField]
-    private float jumpForce = 20f;
+    private float jumpForce = 15f;
 
     private float movementX;
     private Rigidbody2D mybody;
