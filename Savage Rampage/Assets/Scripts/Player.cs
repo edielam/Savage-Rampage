@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     private string JUMP_ANIMATION = "Jump";
     private SpriteRenderer sr;
     private bool isGrounded = true;
-
+    private string GROUND_TAG = "Ground";
     private void Awake()
     {
         mybody = GetComponent<Rigidbody2D>();
@@ -72,6 +72,14 @@ public class Player : MonoBehaviour
         } else
         {
             anim.SetBool(JUMP_ANIMATION, false);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(GROUND_TAG))
+        {
+            isGrounded = true;
+            Debug.Log("Landed on ground");
         }
     }
 }
