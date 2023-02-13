@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private string WALK_ANIMATION = "Walk";
     private string JUMP_ANIMATION = "Jump";
     private SpriteRenderer sr;
+    private bool isGrounded = true;
 
     private void Awake()
     {
@@ -63,8 +64,9 @@ public class Player : MonoBehaviour
     }
     void PlayerJump()
     {
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && isGrounded)
         {
+            isGrounded = false;
             mybody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             anim.SetBool(JUMP_ANIMATION, true); 
         } else
