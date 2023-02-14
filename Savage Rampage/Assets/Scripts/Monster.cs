@@ -5,7 +5,7 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     [HideInInspector]
-    public float speed;
+    public float speed; //speed here is a vector quantity...it has direction
     private Rigidbody2D myBody;
     private Animator anim;
     private string WALK_ANIMATION = "Walk";
@@ -16,7 +16,6 @@ public class Monster : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        speed = -2f;
     }
 
     // Update is called once per frame

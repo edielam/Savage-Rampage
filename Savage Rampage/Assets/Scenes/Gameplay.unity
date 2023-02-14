@@ -2921,6 +2921,8 @@ MonoBehaviour:
   monsterRef:
   - {fileID: 3468037599952509735, guid: 39520f472e5484defb982feac9b0fbc2, type: 3}
   - {fileID: 3547398551183624713, guid: 91fea9944e73a40299728a57d48a24f8, type: 3}
+  leftPos: {fileID: 0}
+  rightPos: {fileID: 0}
 --- !u!1 &1113227347
 GameObject:
   m_ObjectHideFlags: 0
