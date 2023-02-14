@@ -23,5 +23,9 @@ public class MonsterSpawner : MonoBehaviour
     IEnumerator SpawnZombies()
     {
         yield return new WaitForSeconds(Random.Range(1, 5));
+        randomIndex = Random.Range(0, monsterRef.Length);
+        randomSide = Random.Range(0, 2);
+
+        spawnedMonster = Instantiate(monsterRef[randomIndex]);
     }
 }
