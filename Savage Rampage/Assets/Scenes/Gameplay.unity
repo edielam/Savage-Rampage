@@ -6203,7 +6203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3440675527025857707, guid: ef310dde83d814954a52a276e5003717, type: 3}
       propertyPath: m_Name
-      value: 1_terrorist_1_Idle_000
+      value: Player1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef310dde83d814954a52a276e5003717, type: 3}
