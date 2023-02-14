@@ -9,7 +9,8 @@ public class Monster : MonoBehaviour
     private Rigidbody2D myBody;
     private Animator anim;
     private string WALK_ANIMATION = "Walk";
-    private SpriteRenderer sr;
+    [HideInInspector]
+    public SpriteRenderer sr;
     // Start is called before the first frame update
     void Awake()
     {
