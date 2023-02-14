@@ -27,5 +27,14 @@ public class MonsterSpawner : MonoBehaviour
         randomSide = Random.Range(0, 2);
 
         spawnedMonster = Instantiate(monsterRef[randomIndex]);
+
+        //left side
+        if(randomSide == 0)
+        {
+            spawnedMonster.transform.position = leftPos.position;
+            spawnedMonster.GetComponent<Monster>().speed = Random.Range(4, 10);
+        }
+
+        //right side
     }
 }
