@@ -1833,10 +1833,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3468037599952509734, guid: 39520f472e5484defb982feac9b0fbc2, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3468037599952509735, guid: 39520f472e5484defb982feac9b0fbc2, type: 3}
       propertyPath: m_Name
       value: zombie1
@@ -6169,10 +6165,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3440675527025857703, guid: ef310dde83d814954a52a276e5003717, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3440675527025857707, guid: ef310dde83d814954a52a276e5003717, type: 3}
       propertyPath: m_Name
       value: 1_terrorist_1_Idle_000
@@ -6189,10 +6181,6 @@ PrefabInstance:
     - target: {fileID: 3547398551183624713, guid: 91fea9944e73a40299728a57d48a24f8, type: 3}
       propertyPath: m_Name
       value: zombie2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3547398551183624757, guid: 91fea9944e73a40299728a57d48a24f8, type: 3}
-      propertyPath: m_Constraints
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3547398551183624759, guid: 91fea9944e73a40299728a57d48a24f8, type: 3}
       propertyPath: m_RootOrder
