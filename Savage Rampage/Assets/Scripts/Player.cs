@@ -17,11 +17,13 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
     private bool isGrounded = true;
     private string GROUND_TAG = "Ground";
+    //private FixedJoint2D fixj;
     private void Awake()
     {
         mybody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        //fixj.connectedBody = GameObject.FindWithTag("Ground").GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
@@ -67,8 +69,9 @@ public class Player : MonoBehaviour
         if (Input.GetButton("Jump") && isGrounded)
         {
             isGrounded = false;
+            anim.SetBool(JUMP_ANIMATION, true);
             mybody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            anim.SetBool(JUMP_ANIMATION, true); 
+           
         } else
         {
             anim.SetBool(JUMP_ANIMATION, false);
