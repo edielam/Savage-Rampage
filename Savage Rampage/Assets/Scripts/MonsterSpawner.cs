@@ -39,6 +39,7 @@ public class MonsterSpawner : MonoBehaviour
                 spawnedMonster.GetComponent<Monster>().speed = Random.Range(4, 10);
                 spawnedMonster.GetComponent<Monster>().sr.flipX = false;
                 //spawnedMonster.transform.localScale = new Vector3(-1f, 1f, 1f); //for flipping on x-axis
+                //this command seems to affect the size of the spaawned object
             }
             //right side
             else
