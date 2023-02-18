@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
     private bool isGrounded = true;
     private string GROUND_TAG = "Ground";
+    private string ENEMY_TAG = "Enemy";
     //private FixedJoint2D fixj;
     private void Awake()
     {
@@ -83,6 +84,10 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
             Debug.Log("Landed on ground");
+        }
+        if (collision.gameObject.CompareTag(ENEMY_TAG))
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -45,7 +45,7 @@ public class MonsterSpawner : MonoBehaviour
             else
             {
                 spawnedMonster.transform.position = rightPos.position;
-                spawnedMonster.GetComponent<Monster>().speed = -Random.Range(4, 10);
+                spawnedMonster.GetComponent<Monster>().speed = -Random.Range(2, 5);
                 spawnedMonster.GetComponent<Monster>().sr.flipX = true;
             }
         }
