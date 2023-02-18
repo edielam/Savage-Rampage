@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3547398551183624754}
   - component: {fileID: 991388804272453576}
   - component: {fileID: 603891298}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: zombie2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,3 +158,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  sr: {fileID: 0}
