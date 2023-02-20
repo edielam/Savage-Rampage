@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 152007945}
   - component: {fileID: 152007944}
   - component: {fileID: 152007943}
+  - component: {fileID: 152007946}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -400,7 +401,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 152007944}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1838016583}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &152007944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,6 +452,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152007941}
   m_CullTransparentMesh: 1
+--- !u!114 &152007946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152007941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a97875ff80b14450b7884a5fe47dbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &159852412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,7 +2622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 730571790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1838016583}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Home
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &730571790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5024,6 +5061,7 @@ GameObject:
   - component: {fileID: 1838016581}
   - component: {fileID: 1838016580}
   - component: {fileID: 1838016579}
+  - component: {fileID: 1838016583}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5114,6 +5152,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1838016583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838016578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a97875ff80b14450b7884a5fe47dbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1850107129
 GameObject:
   m_ObjectHideFlags: 0
