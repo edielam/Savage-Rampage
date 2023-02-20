@@ -13,4 +13,9 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
