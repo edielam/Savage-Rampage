@@ -19,7 +19,7 @@ Savage Rampage is a simple 2D game built with Unity and C# where zombies chase t
 - Avoid getting caught by the zombies, as this will end the game.
 - The game can be restarted or exited using the buttons provided on the main menu and game over screen.
 
-##Credits
+## Credits
 - Game assets (sprites, sound effects, and music) were sourced from the Unity Asset Store and other free online sources.
 - This game was developed as a technical demonstration of game development skills by [Edward Lampoh](https://github.com/edielam).
 
